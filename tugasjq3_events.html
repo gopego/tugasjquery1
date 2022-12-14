@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <style>
+        body{
+            background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+        }
+    </style>
+    <title>Fahmi</title>
+</head>
+
+<body>
+    <div class="container d-flex flex-column" style="height: 100vh;">
+        <div class="m-auto">
+            <div id="qwerty" class="border border-dark border-2 rounded rounded-5" style="height: 300px; width: 300px; background-color: white;"></div>
+            <div class="col mt-1 d-flex justify-content-evenly">
+                <button type="button" class="btn btn-primary" id="biru">Biru</button>
+                <button type="button" class="btn btn-danger" id="merah">Merah</button>
+                <button type="button" class="btn btn-success" id="hijau">Hijau</button>
+                <button type="button" class="btn btn-warning" id="kuning">Kuning</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+        $('#biru').click(function(){
+            $('#qwerty').css("background-color" , "blue");
+        })
+        $('#merah').click(function(){
+            $('#qwerty').css("background-color" , "red");
+        })
+        $('#hijau').click(function(){
+            $('#qwerty').css("background-color" , "green");
+        })
+        $('#kuning').click(function(){
+            $('#qwerty').css("background-color" , "yellow");
+        })
+
+
+
+        });
+
+        
+    </script>
+</body>
+
+</html>
