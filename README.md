@@ -1,1 +1,1 @@
-# tugasjquery1
+# Tugas jQuery untuk kelas Astro oleh Fahmi
