@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahmi</title>
+    <style>
+      body{
+        font-family: sans-serif;
+      }  
+      #tombol{
+        background-color: dodgerblue;
+        color: white;
+        padding: 7px;
+        border: 1px solid dodgerblue;
+        border-radius: 3px;
+      }
+      #modal-box{
+        background-color: #f0f0f0;
+        position: absolute;
+        display: block;
+        width: 500px;
+        padding: 15px;
+        border-radius: 5px;
+        display: none;
+      }
+      #close-button{
+        background-color: crimson;
+        color: white;
+        padding: 5px;
+        border: 1px solid crimson;
+        float: right;
+        border-radius: 3px;
+      }
+      #container{
+        align-content: center;
+        border-color: skyblue;
+      }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Latihan menggunakan modal</h1>
+        <button id="tombol">Informasi</button>
+        <div id="modal-box">
+            <div id="close">
+                <div id="close-button">X</div>
+            </div>
+            <div id="modal">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolor provident beatae ratione maiores possimus amet id, nemo, nam facere officia fugiat qui repellat deserunt animi eius unde similique! Accusamus deleniti in accusantium architecto eligendi fuga ratione quaerat itaque aliquam hic reprehenderit recusandae facere molestias, provident tempora ex illum mollitia nihil doloremque delectus nulla nisi explicabo sed.
+            </div>
+        </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $('#tombol').click(function () { 
+          $('#modal-box').show(1000);          
+        });
+        $('#close-button').click(function () { 
+          $('#modal-box').hide(1000);          
+        });
+      });
+    </script>
+</body>
+</html>
